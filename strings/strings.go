@@ -1,4 +1,4 @@
-package string
+package strings
 
 import (
 	"encoding/json"
@@ -8,7 +8,7 @@ import (
 
 func String(s any) (v string) {
 	e := reflect.TypeOf(s)
-	
+
 	if nil == e {
 		v = "null"
 
